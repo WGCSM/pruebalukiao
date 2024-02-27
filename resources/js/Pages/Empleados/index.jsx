@@ -49,15 +49,15 @@ export default function Dashboard({ auth,props }) {
                                                 <td className="border px-4 py-2">{ telefono }</td>
                                                 <td className="border px-4 py-2">{ pais }</td>
                                                 <td className="border px-4 py-2">{ ciudad }</td>
-                                                <td className="border px-4 py-2">
-                                                    <Link tabIndex="1" className="px-4 py-2 text-sm text-white bg-blue-500 rounded" href={route("empleados.edit", id)} >Editar</Link>
-                                                    <button onClick={destroy} id={id} tabIndex="-1" type="button" className="mx-1 px-4 py-2 text-sm text-white bg-red-500 rounded" >Delete</button>
+                                                <td className="border px-2 py-2">
+                                                    <Link tabIndex="1" className="px-2 py-2 text-sm text-white bg-blue-500 rounded" href={route("empleados.edit", id)} >Editar</Link>
+                                                    <button onClick={destroy} id={id} tabIndex="-1" type="button" className="mx-1 px-2 py-2 text-sm text-white bg-red-500 rounded" >Eliminar</button>
                                                 </td>
                                             </tr>
                                         ))}
                                         {empleados.length === 0 && (
                                             <tr>
-                                                <td className="px-6 py-4 border-t"colSpan="4">No contacts found.</td>
+                                                <td className="px-6 py-4 border-t"colSpan="4">Sin Empleados.</td>
                                             </tr>
                                         )}
                                     </tbody>
